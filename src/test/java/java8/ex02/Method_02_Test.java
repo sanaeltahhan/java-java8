@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java8.data.Data;
 import java8.data.Person;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Exercice 02 - Redéfinition
@@ -22,7 +23,7 @@ public class Method_02_Test {
         
         default String format() {
         	int nbPerson = findAll().size();
-        	String chaine = "["+ nbPerson + "persons]";
+        	String chaine = "[" + nbPerson + " persons]";
         	return chaine;
         }
     }
@@ -45,8 +46,7 @@ public class Method_02_Test {
         
         @Override
 		public String format() {
-        	String chaine2 = "DaoA" + IDao.super.format();
-        	return chaine2;
+        	return "DaoA" + IDao.super.format();
         	
         }
 
@@ -61,7 +61,9 @@ public class Method_02_Test {
         // TODO invoquer la méthode format() pour que le test soit passant
         String result = null;
         result = daoA.format();
+		assertEquals("DaoA[20 persons]", result);
 
-        "DaoA[20 persons]".equals(result);
+
+        //assert "DaoA[20 persons]".equals(result);
     }
 }
