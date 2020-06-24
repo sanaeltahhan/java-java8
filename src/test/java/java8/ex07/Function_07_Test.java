@@ -37,7 +37,6 @@ public class Function_07_Test {
     public void test_format_subtract() throws Exception {
     	
         String result = format(2, 3, "-", substract);
-        System.out.println(result);
 
         assert result.equals("(2-3)=-1");
     }
