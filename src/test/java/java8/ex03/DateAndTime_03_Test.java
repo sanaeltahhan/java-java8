@@ -20,9 +20,9 @@ public class DateAndTime_03_Test {
         LocalTime result = LocalTime.of(15, 24, 02);
 
         // TODO valoriser les différentes variables afin de rendre le test passant
-        int hour = 15;
-        int minutes = 24;
-        int second = 2;
+        int hour = result.getHour();
+        int minutes = result.getMinute();
+        int second = result.getSecond();
 
         assertThat(hour, is(15));
         assertThat(minutes, is(24));
@@ -37,9 +37,9 @@ public class DateAndTime_03_Test {
 
 
         // TODO valoriser les différentes variables afin de rendre le test passant
-        int hour = 9;
-        int minutes = 30;
-        int second = 0;
+        int hour = result.getHour();
+        int minutes = result.getMinute();
+        int second = result.getSecond();
 
         assertThat(hour, is(9));
         assertThat(minutes, is(30));
