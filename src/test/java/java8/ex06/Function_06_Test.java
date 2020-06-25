@@ -26,7 +26,7 @@ public class Function_06_Test {
     @Test
     public void test_supplier_formatAge() throws Exception {
         // TODO compléter le test unitaire pour qu'il soit passant
-        String result = formatAge(null);
+        String result = formatAge(() -> new Person("toto", "jj", 35, "Pass"));
 
         assert result.equals("[age=35]");
     }

@@ -19,7 +19,9 @@ public class Function_05_Test {
 
     // TODO compléter la fonction
     // TODO vérifier que l'age > 4 avec une assertion JUnit
-    Consumer<Person> verifyAge = person -> person.getAge();
+    Consumer<Person> verifyAge = person -> {
+    	assert person.getAge() >4;
+    };
     
     @Test
     public void test_change_pass() throws Exception {
