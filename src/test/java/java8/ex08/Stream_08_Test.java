@@ -108,7 +108,7 @@ public class Stream_08_Test {
         	    Optional<Entry<String, Integer>> maxEntry = groupping.entrySet()
         	        .stream()
         	        .max(Comparator.comparing(Map.Entry::getValue));
-        	     	maxEntry.get().getValue();
+        	     maxEntry.get().getValue();
         	
             
         	Optional<Naissance> result =  null;
